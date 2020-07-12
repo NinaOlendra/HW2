@@ -1,0 +1,120 @@
+/*
+body div, ul {
+    border: 1px solid red;
+}
+*/
+
+h1 {
+    color: rgb(8, 111, 175);
+    font-style: oblique;
+}
+
+h5 {
+    font-weight: bold;
+    font-size: 150%;
+}
+
+#title {
+    text-align: center;
+}
+
+#footer {
+    text-align: center;
+    border-top: 2px solid gray;
+}
+
+#cnt, .product, .sale, .menu>ul, .smile{
+    display: flex;
+}
+
+.product {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu li ul {
+    margin-left: 30px;
+    display: none;
+    position: absolute;
+}
+
+.menu li:hover ul{
+    display: block;
+}
+
+.button {
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: center;
+    color: black;
+    width: 150px;
+    height: 20px;
+    background-color: rgb(191, 226, 248);
+}
+
+.button:hover {
+    font-weight: bold;
+}
+
+#cnt, .menu>ul{
+    flex-flow: row wrap;
+}
+
+.product {
+    width: 380px;
+    border: 1px solid silver;
+    margin: 5px;
+}
+
+.product * {
+    margin: 3px;
+}
+
+.product img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.sale {
+    align-self: stretch;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.smile {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top:100px;
+    right:20px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid silver;
+}
+
+.smile img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.tbBtn img{
+    max-width: 20px;
+    max-height: 20px;
+}
